@@ -1,0 +1,31 @@
+Arguments: 
+  /usr/local/Cellar/node/14.4.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add ws
+
+PATH: 
+  /Users/darkblaze/.rvm/gems/ruby-2.3.1/bin:/Users/darkblaze/.rvm/gems/ruby-2.3.1@global/bin:/Users/darkblaze/.rvm/rubies/ruby-2.3.1/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/darkblaze/.rvm/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/darkblaze/side_dishes/webSoket/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
