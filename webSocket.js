@@ -6,14 +6,9 @@ const wsserver = new WebSocket.Server({server});
 const wsocket = new WebSocket("ws://127.0.0.1:8080");
 
 wsserver.on('connection', function connection(ws) {
-    ws.onmessage = (msg) => ws.send("hello world");
-    console.log('ws msg sent');
+    ws.send("hello world");
+    console.log('ws server started');
 });
 
-wsocket.onmessage = () => console.log(message);
+wsocket.onmessage = (message) => console.log(message.data);
 server.listen(8080);
-
-
-/*TODO
-- troubleshoot inability to see message sent to ws
-*/

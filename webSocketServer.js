@@ -5,11 +5,11 @@ const wsserver = new WebSocket.Server({port});
 const wsocket = new WebSocket("ws://localhost:8080");
 
 wsserver.on('connection', function connection(ws) {
-    ws.onmessage = (msg) => ws.send("hello world");
-    console.log('ws msg sent');
+    ws.send("hello world");
+    console.log('ws server started');
 });
 
-wsocket.onmessage = () => console.log(message);
+wsocket.onmessage = (message) => console.log(message.data);
 
 /*
     Issues
@@ -19,5 +19,4 @@ request and send headers. see link
 
     TODO
 - add upgrade event and as res headers
-- trigger message print to console on event
 */
